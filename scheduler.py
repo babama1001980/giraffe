@@ -7,7 +7,7 @@ latest_result = ""
 
 def visit_website():
     global latest_result
-    url = "https://mingfei1980-rmvb.hf.space/" 
+    url = "https://seeyou1980.onrender.com/" 
     response = requests.get(url)
     latest_result = f"Website: {url}\nStatus code: {response.status_code}"
 
