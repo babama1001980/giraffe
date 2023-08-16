@@ -2,7 +2,7 @@
 FROM node:latest
 
 # 创建一个非root用户，UID在推荐的范围内
-RUN groupadd -g 10001 appuser && useradd -r -u 10001 -g appuser appuser
+RUN groupadd -g 10014 appuser && useradd -r -u 10014 -g appuser appuser
 
 # 设置工作目录
 WORKDIR /app
