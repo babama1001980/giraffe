@@ -1,14 +1,17 @@
-# ʹ�ùٷ� Node.js ������Ϊ��������
+# 使用官方 Node.js 镜像作为基础镜像
 FROM node:latest
 
-# ���ù���Ŀ¼
+# 设置工作目录
 WORKDIR /app
 
-# ��Ӧ�ó����ļ����Ƶ�������
+# 将应用程序文件复制到容器中
 COPY . .
 
-# ��װӦ�ó��������
+# 监听端口
+const port = 7860
+
+# 安装应用程序的依赖
 RUN npm install
 
-# ����Ĭ�ϵ����������Ӧ�ó���
+# 设置默认的命令，即启动应用程序
 CMD ["npm", "start"]
