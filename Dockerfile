@@ -20,7 +20,7 @@ USER appuser
 RUN npm install
 
 # 暴露应用程序监听的端口
-EXPOSE 7860
+EXPOSE 80
 
 # 设置默认的命令，即启动应用程序
 CMD ["npm", "start"]
