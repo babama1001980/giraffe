@@ -1,8 +1,8 @@
 # 使用官方 Node.js 镜像作为基础镜像
 FROM node:latest
 
-# 创建一个非root用户
-RUN groupadd -g 1001 appuser && useradd -r -u 1001 -g appuser appuser
+# 创建一个非root用户，UID在推荐的范围内
+RUN groupadd -g 10001 appuser && useradd -r -u 10001 -g appuser appuser
 
 # 设置工作目录
 WORKDIR /app
