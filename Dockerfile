@@ -7,8 +7,8 @@ WORKDIR /app
 # 将应用程序文件复制到容器中
 COPY . .
 
-# 监听端口
-const port = 7860
+# 暴露应用程序监听的端口
+EXPOSE 7860
 
 # 安装应用程序的依赖
 RUN npm install
