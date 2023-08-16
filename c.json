@@ -1,7 +1,7 @@
 {
   "inbounds": [
         {
-            "port":7860,
+            "port":80,
             "protocol":"vless",
             "settings":{
                 "clients":[
