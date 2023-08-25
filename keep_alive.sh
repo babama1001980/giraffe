@@ -9,4 +9,4 @@ curl -s "$URL" > /dev/null
 
 chmod +x keep_alive.sh
 crontab -e
-*/1 * * * * /path/to/keep_alive.sh
+*/* * * * * /path/to/keep_alive.sh
