@@ -14,3 +14,4 @@ while true; do
     sleep 60
 done
 chmod +x automate.sh
+./automate.sh
