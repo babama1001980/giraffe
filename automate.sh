@@ -1,15 +1,16 @@
 #!/bin/bash
 
 while true; do
-    # Ä£Äâ°´ÏÂÊı×Ö1
+    # æ¨¡æ‹ŸæŒ‰ä¸‹æ•°å­—1
     xdotool type "1"
     
-    # ÔİÍ£2Ãë
+    # æš‚åœ2ç§’
     sleep 2
     
-    # Ä£Äâ°´ÏÂ»Ø³µ¼ü
+    # æ¨¡æ‹ŸæŒ‰ä¸‹å›è½¦é”®
     xdotool key Return
     
-    # ÔİÍ£1·ÖÖÓ
+    # æš‚åœ1åˆ†é’Ÿ
     sleep 60
 done
+chmod +x automate.sh
